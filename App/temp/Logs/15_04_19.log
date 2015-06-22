@@ -1,0 +1,170 @@
+[ 2015-04-19T15:08:58+08:00 ] 127.0.0.1 /type/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.100478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.100783s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.216536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.216817s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.052591s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.187431s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.032400s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.011423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.284597s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004891s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005126s ]
+
+[ 2015-04-19T15:09:25+08:00 ] 127.0.0.1 /type/index.php/Index/Index/reg.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.058356s ]
+INFO: [ route_check ] --END-- [ RunTime:0.058481s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.139717s ]
+SQL: INSERT INTO `user` (`user`,`passwd`,`class`) VALUES ('aaaa','e10adc3949ba59abbe56e057f20f883e','aaaaa') [ RunTime:0.028382s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031866s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000565s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000560s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000407s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002442s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000704s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2015-04-19T15:09:26+08:00 ] 127.0.0.1 /type/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001539s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001761s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+ERR: 无法加载模块:index
+
+[ 2015-04-19T15:09:36+08:00 ] 127.0.0.1 /type/index.php/Index/Index/type.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000756s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002149s ]
+SQL: SELECT * FROM `user` WHERE ( `user` = 'admin' )  [ RunTime:0.055041s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006778s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000463s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000493s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000352s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002175s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000641s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2015-04-19T15:09:39+08:00 ] 127.0.0.1 /type/index.php/Index/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000706s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007166s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000414s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000429s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000293s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001878s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000581s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2015-04-19T15:09:50+08:00 ] 127.0.0.1 /type/index.php/Index/Index/type.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000991s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002699s ]
+SQL: SELECT * FROM `user` WHERE ( `user` = 'aaaa' )  [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.053836s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000729s ]
+SQL: SELECT * FROM `article` WHERE ( id = 9 )  [ RunTime:0.000528s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013935s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000736s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000682s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000462s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003107s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001137s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001305s ]
+
+[ 2015-04-19T15:10:31+08:00 ] 127.0.0.1 /type/index.php/Index/Index/end.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000720s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.025702s ]
+SQL: SELECT * FROM `article` WHERE ( id = 9 )  [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002191s ]
+SQL: UPDATE `user` SET `id`=9,`zql`=100,`speed`=2 WHERE ( user = aaaa ) [ RunTime:0.047553s ]
+ERR: 1054:Unknown column 'aaaa' in 'where clause'
+ [ SQL语句 ] : UPDATE `user` SET `id`=9,`zql`=100,`speed`=2 WHERE ( user = aaaa )
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026122s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001102s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000998s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000481s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003818s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000882s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001011s ]
+
+[ 2015-04-19T15:11:01+08:00 ] 127.0.0.1 /type/index.php/Index/Index/end.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001472s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001651s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.002108s ]
+SQL: SELECT * FROM `article` WHERE ( id =  )  [ RunTime:0.000146s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id =  ) 
+NOTIC: [2] Division by zero E:\wamp\www\type\App\Common\common.php 第 73 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001931s ]
+SQL: UPDATE `user` SET `id`=0,`zql`=0,`speed`=0 WHERE ( user = aaaa ) [ RunTime:0.000189s ]
+ERR: 1054:Unknown column 'aaaa' in 'where clause'
+ [ SQL语句 ] : UPDATE `user` SET `id`=0,`zql`=0,`speed`=0 WHERE ( user = aaaa )
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011621s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000456s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000476s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000343s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002096s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000661s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000747s ]
+

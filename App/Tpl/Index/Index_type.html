@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>网络工程学院打字系统</title>
+<script type="text/javascript">
+
+function MM_callJS(jsStr) { //v2.0
+  return eval(jsStr);
+}
+function check()
+{
+   str="{$text}";
+   newstr='';
+   tempstr='';
+   zq=0;
+   len=str.length;
+   len1=form1.text.value.length;
+   for(j=0;j<len;j++)
+   if(str.charAt(j)==form1.text.value.charAt(j))
+   {
+      if(str.charAt(j)=='\n') tempstr="<br>";
+   else tempstr="<font color='green'>"+str.charAt(j)+"</font>";
+      newstr+=tempstr;
+   		zq++;
+   }
+   else
+   {
+      if(j>=len1) newstr+="<font color='black'>"+str.charAt(j)+"</font>";
+   else  newstr+="<font color='red'>"+str.charAt(j)+"</font>";
+   }
+    txt.innerHTML=newstr;
+    form1.zql.value=Math.round(zq/len*100);
+}
+limit=1000;
+i=0;
+function timer()
+{
+var ts = document.getElementById("times");
+ts.value = parseInt(limit);
+  if(limit==1)
+  {
+    alert("时间到!");
+    form1.submit();
+ }
+ else
+ {
+    limit-=1;
+    i++;
+    form1.left.value="剩余时间"+limit+"秒";
+    form1.sd.value=Math.round(form1.text.value.length/i*60);
+    form1.bt.disabled='disabled';
+    setTimeout("timer()",1000);
+ }
+}
+
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
+<style>
+.main { width:80%; height:750px; background:url(__PUBLIC__/images/main_bg.jpg); margin-left:10%;}
+.top { width:100%; height:90px;}
+.main_M { width:90%; margin-left:5%; height:570px;}
+.left{ height:263px; width:100%;}
+#Layer1 {  left:19px; top:33px;width:90%;; height:250px; z-index:1; background-color: #ffffff; overflow: auto; margin-left:5%;}
+.right{height:360px;px; width:100%; margin-top:15px;}
+#text {	height:250px; width:90%; font-size:20px;}
+.M_t{ height:60px;width:90%; margin-left:5%; }
+#btn{
+	BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 14px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde); BORDER-LEFT: #7b9ebd 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7b9ebd 1px solid;
+}
+body {
+	background-image: url(__PUBLIC__/images/bg.jpg);
+}
+</style>
+</head>
+<body onContextMenu="return false" oncopy="alert('对不起,不能复制')">
+<div class="main">
+	<div class="top" align="center"><img src="__PUBLIC__/images/banner.gif"/></div>
+	<div class="main_M">
+		<div class="left">
+    		<div align="center">
+				<b>文字对照区</b>
+			</div>
+        	<div id="Layer1">
+        	<div class="text" id="txt"> </div>
+			</div>
+        </div>
+		<div class="right">
+   			<form id="form1" name="form1" method="post" action="{:U('Index/Index/end')}" >
+    			<div align="center">
+            		<div align="right" style=" margin-right:5%">姓名:{$user}班级:{$class}
+    				<input name="bt" type="button" onclick="timer(60);MM_callJS('check()');times();" value="开始测试"/>
+    				<input name="left" type="text" id="left" readonly="readonly"/>
+    				速度<input name="sd" type="text" id="sd" size="5" readonly="readonly"/>
+    				完成率<input name="zql" type="text" id="zql" size="5" readonly="readonly"/>
+    				<input type="hidden" name="id" value="{$id}"/>
+     				<input type="hidden" name="arrid" value="0" id="times"/>
+					</div>
+					<div align="center">
+    				<textarea name="text" cols="100" rows="3" class="text" id="text" onkeyup="MM_callJS('check()')" onpaste="return false"></textarea>
+					</div>
+    			</div>
+	  		<div align="center" style="margin-top:20px;"> <input id="btn" type="button" onclick="document.form1.submit()" name="send" value="提交" style="width:150px; height:30px" /></div>
+   			</form>
+    	</div>
+    </div>
+	<div class="M_t">
+		<div style="float:right">
+		主办单位：网络工程学院<br />
+		承办单位：启点网络协会<br />
+		协办单位：网络工程学院学生会办公室
+		</div>
+	</div>
+
+	</div>
+</div>
+</body>
+</html>
